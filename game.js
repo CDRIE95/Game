@@ -86,7 +86,8 @@ function collectCoins() {
       playerRect.y < coinRect.y + coinRect.height &&
       playerRect.y + playerRect.height > coinRect.y
     ) {
-      coin.remove(); // Remove the coin if collected
+      coin.remove();
+      score:1+// Remove the coin if collected
     }
   });
 }
